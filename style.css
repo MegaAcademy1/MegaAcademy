@@ -445,3 +445,16 @@ nav ul li {
         align-items: center;
     }
 }
+/* Ensures all links are the same color */
+.location-box a {
+    color: blue; /* Change this to any color you want */
+    text-decoration: none; /* Removes underline */
+}
+
+.location-box a:visited {
+    color: blue; /* Keeps the color the same even after visiting */
+}
+
+.location-box a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
