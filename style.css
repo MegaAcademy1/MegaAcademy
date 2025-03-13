@@ -1,0 +1,447 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  background-color: black; /* Black background for the header */
+  width: 100%;
+}
+
+#logo {
+  width: 150px; /* Adjust size for better visibility */
+  height: auto;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Contact Us Button */
+.contact-button {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Language Switch Button */
+.language-switch {
+  margin-left: auto; /* Pushes the language button to the right */
+}
+
+/* Sections */
+h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Locations & Contact Sections */
+.location-container,
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Boxes */
+.location-box,
+.contact-box {
+  width: 200px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  transition: 0.3s;
+}
+
+.location-box img,
+.contact-box img {
+  width: 60px;
+  height: 60px;
+}
+
+.location-box:hover,
+.contact-box:hover {
+  background: #f8f8f8;
+  transform: scale(1.05);
+}
+
+/* Programs Section */
+.program-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.program-box {
+  flex: 1;
+  min-width: 320px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.program-box h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.program-box p {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background: #333;
+  color: #fff;
+}
+
+/* Coaches Section */
+#coaches {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.coach-card {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .program-container {
+    justify-content: center;
+  }
+
+  .program-box {
+    min-width: 250px;
+  }
+
+  .location-box,
+  .contact-box {
+    width: 180px;
+  }
+
+  #logo {
+    width: 120px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack everything for small screens */
+  .program-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-box {
+    width: 90%;
+  }
+
+  .location-container,
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .location-box,
+  .contact-box {
+    width: 90%;
+  }
+
+  .coach-card {
+    width: 90%;
+  }
+
+  /* Smaller fonts & padding */
+  h2 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile-first adjustments */
+  #logo {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  nav {
+    padding: 5px 0;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  .contact-button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+/* Fix Arabic Button Placement */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Ensures buttons wrap properly on smaller screens */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Contact Us Button */
+.contact-button {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Arabic Language Switch Button */
+.language-switch {
+    margin-left: auto; /* Pushes it to the right */
+    position: absolute;
+    right: 20px; /* Adjusts spacing from the right */
+}
+
+.language-switch button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-switch {
+        position: static;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Fix Tables Layout */
+.program-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.program-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.program-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.program-box table th,
+.program-box table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.program-box table th {
+  background: #333;
+  color: white;
+}
+
+/* Responsive Fix for Tables */
+@media (max-width: 768px) {
+  .program-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-switch button {
+    font-size: 14px;
+    padding: 3px 8px;
+  }
+}
+/* Coaches Section */
+#coaches {
+  padding: 50px 20px; /* Keeps spacing */
+  background-color: #f8f8f8; /* Light background */
+  text-align: center;
+}
+
+.coach-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch; /* Ensures uniform height */
+}
+
+.coach-card {
+  flex: 1;
+  max-width: 400px;
+  min-height: 250px; /* Ensures equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center-aligns content */
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coach-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.coach-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Ensure all titles and bios have the same alignment */
+.coach-card h3, 
+.coach-card p {
+  width: 100%; /* Ensures uniform width */
+  text-align: center;
+}
+
+/* Responsive Design for Coaches */
+@media (max-width: 768px) {
+    .coach-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
