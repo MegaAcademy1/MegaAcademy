@@ -2,22 +2,27 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://megaacademy1.github.io/MegaAcademy/</loc>
-    <lastmod>2024-04-01</lastmod>
-    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://megaacademy1.github.io/MegaAcademy/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://megaacademy1.github.io/MegaAcademy/indexar.html</loc>
-    <lastmod>2024-04-01</lastmod>
-    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://megaacademy1.github.io/MegaAcademy/style.css</loc>
-    <lastmod>2024-04-01</lastmod>
-    <priority>0.30</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://megaacademy1.github.io/MegaAcademy/script.js</loc>
-    <lastmod>2024-04-01</lastmod>
-    <priority>0.30</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
